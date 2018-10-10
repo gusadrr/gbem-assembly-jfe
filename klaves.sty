@@ -1,0 +1,268 @@
+%% % -----------------------------------------------------------------
+%% % guarda: hay colisiones varias con "mstorti.sty"
+%% %
+%% % re-define signo de admiracion para obtener letras en "bold"
+\def\normalaccent{!}
+\def\factorial{!}
+%\def\boldmath#1{\relax\ifmmode{\bf #1}\else{#1}\fi}
+%\def\boldmath#1{\relax\ifmmode{\bf #1}\else\normalaccent\fi}
+%% %
+%% \def\usebangforbold{
+%%    \catcode`\!=\active
+%%    \let!=\boldmath 
+%%    \def\!{\ifmmode\mskip-\thinmuskip\else\char'74\fi}
+%% }
+%
+% -----------------------------------------------------------------
+%\newcommand{\?}{{\char'076}}          % signo de pregunta abierto
+\newcommand\dif{{~\mathrm{d}}}
+\newcommand\diff{{~\mathrm{d}^2}}
+\newcommand{\di}[1]{\,{\mathrm{d}}#1}
+%\newcommand\half{{\frac{1}{2}}}
+%\newcommand\dott{{\mathaccent"065F}}
+%\newcommand\ext{{\mathrm{e}}}
+%\newcommand\atan{{\mathrm{atan}}}
+% usage: \nexpE{-5} -> 10^{-5}
+\newcommand{\mexpE}[1]{10^{#1}}
+%
+% Superscripted circle:
+%   You can have ^\circ in math mode to have a circle in 
+%   superscript,  or just write 
+%
+%   The human body temperature is 37$^\circ$ Celsius
+%
+%   if you want degrees in your text.
+% 
+%   You can also define a command that writes a degree symbol when 
+%   used with \degree if you add the following to your preamble
+%   
+%   \newcommand{\degree}{\ensuremath{^\circ}}
+%  
+%   Since the command ensures that the superscripted circle is written 
+%   in math mode, you can use this command both in math mode and in 
+%   text mode, as follows:
+%   
+%   The human body temperature is 37\degree Celsius
+%   
+%   or
+% 
+%   The human body temperature is $37\degree$ Celsius 
+%
+%\newcommand{\grados}{{\strut^{\circ}}} % (no siempre queda bien)
+\newcommand{\grados}{\ensuremath{^\circ}} 
+\newcommand\ddaggera{{\strut\raise 2pt\hbox{$~\ddagger$}}}
+\newcommand\daggera{{\strut\raise 2pt\hbox{$~\dagger$}}}
+\newcommand\Lext{{L_{\mathrm{ext}}}}
+\newcommand\Uinf{{U_{\infdof}}}
+\newcommand\Ndof{{N_{\mathrm{dof}}}}
+\newcommand\ymax{{x^2_{\max}}}
+\newcommand\deltascale{{\delta_{\mathrm{s}}}}
+\newcommand\ddeltascale{{\dot \delta_{\mathrm{s}}}}
+\newcommand\etascale{{\eta_{\mathrm{s}}}}
+\newcommand\ai{{\leftarrow}}
+\newcommand\ad{{\rightarrow}}
+\newcommand\Ei{{\hbox{Ei}~}}
+\newcommand\oG{{\tilde G}}
+%
+%\newcommand\Imag{{\mathrm{Im}}}
+%\newcommand\Real{{\mathrm{Re}}}
+%
+% -----------------------------------------------------------------
+ \newcommand{\kompactlist}{%
+  \setlength{\partopsep}{0pt}
+  \setlength{\parsep}{0pt}
+  \setlength{\itemsep}{0pt}
+  \setlength{\topsep}{0pt}
+  \setlength{\parskip}{0pt}
+  %
+  \renewcommand\section{\@startsection {section}{1}{\z@}%
+                                   {-0.5ex \@plus -1ex \@minus -.2ex}%
+                                   {0.5ex \@plus.2ex}%
+                                   {\normalfont\Large\bfseries}}
+  \renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+                                   {-0.5ex\@plus -1ex \@minus -.2ex}%
+                                   {0.5ex \@plus .2ex}%
+                                   {\normalfont\large\bfseries}}
+}% end kompactlist
+%
+% -----------------------------------------------------------------
+% The following was borrowed from the JFM style
+
+% -----------------------------------------------------------------
+% For units of measure
+\newcommand\dynpercm{\nobreak\mbox{$\;$dyn\,cm$^{-1}$}}
+\newcommand\cmpermin{\nobreak\mbox{$\;$cm\,min$^{-1}$}}
+
+% -----------------------------------------------------------------
+% Various bold symbols
+\providecommand\bnabla{\boldsymbol{\nabla}}
+\providecommand\bcdot{\boldsymbol{\cdot}}
+\providecommand\bomega{\boldsymbol{\omega}}
+\newcommand\biS{\boldsymbol{S}}
+\newcommand\etb{\boldsymbol{\eta}}
+\newcommand\bldP{\boldsymbol{P}}
+
+% -----------------------------------------------------------------
+% For multiletter symbols
+\newcommand\Rey{\mbox{\textrm{Re~}}}  % Reynolds  number
+\newcommand\Pra{\mbox{\textrm{Pr~}}}  % Prandtl   number
+\newcommand\Str{\mbox{\textrm{St~}}}  % Strouhal  number
+
+% -----------------------------------------------------------------
+% Bold italic (slopping) or bold slopping greek: for vectors
+\newcommand\bisa{\boldsymbol{a}}
+\newcommand\bisb{\boldsymbol{b}}
+\newcommand\bisc{\boldsymbol{c}}
+\newcommand\bisd{\boldsymbol{d}}
+\newcommand\bise{\boldsymbol{e}}
+\newcommand\bisf{\boldsymbol{f}}
+\newcommand\bisg{\boldsymbol{g}}
+\newcommand\bish{\boldsymbol{h}}
+\newcommand\bisi{\boldsymbol{i}}
+\newcommand\bisj{\boldsymbol{j}}
+\newcommand\bisk{\boldsymbol{k}}
+\newcommand\bisl{\boldsymbol{l}}
+\newcommand\bism{\boldsymbol{m}}
+\newcommand\bisn{\boldsymbol{n}}
+\newcommand\biso{\boldsymbol{o}}
+\newcommand\bisp{\boldsymbol{p}}
+\newcommand\bisq{\boldsymbol{q}}
+\newcommand\bisr{\boldsymbol{r}}
+\newcommand\biss{\boldsymbol{s}}
+\newcommand\bist{\boldsymbol{t}}
+\newcommand\bisu{\boldsymbol{u}}
+\newcommand\bisv{\boldsymbol{v}}
+\newcommand\bisw{\boldsymbol{w}}
+\newcommand\bisx{\boldsymbol{x}}
+\newcommand\bisy{\boldsymbol{y}}
+\newcommand\bisz{\boldsymbol{z}}
+%
+\newcommand\bisA{\boldsymbol{A}}
+\newcommand\bisB{\boldsymbol{B}}
+\newcommand\bisC{\boldsymbol{C}}
+\newcommand\bisD{\boldsymbol{D}}
+\newcommand\bisE{\boldsymbol{E}}
+\newcommand\bisF{\boldsymbol{F}}
+\newcommand\bisG{\boldsymbol{G}}
+\newcommand\bisH{\boldsymbol{H}}
+\newcommand\bisI{\boldsymbol{I}}
+\newcommand\bisJ{\boldsymbol{J}}
+\newcommand\bisK{\boldsymbol{K}}
+\newcommand\bisL{\boldsymbol{L}}
+\newcommand\bisM{\boldsymbol{M}}
+\newcommand\bisN{\boldsymbol{N}}
+\newcommand\bisO{\boldsymbol{O}}
+\newcommand\bisP{\boldsymbol{P}}
+\newcommand\bisQ{\boldsymbol{Q}}
+\newcommand\bisR{\boldsymbol{R}}
+\newcommand\bisS{\boldsymbol{S}}
+\newcommand\bisT{\boldsymbol{T}}
+\newcommand\bisU{\boldsymbol{U}}
+\newcommand\bisV{\boldsymbol{V}}
+\newcommand\bisW{\boldsymbol{W}}
+\newcommand\bisX{\boldsymbol{X}}
+\newcommand\bisY{\boldsymbol{Y}}
+\newcommand\bisZ{\boldsymbol{Z}}
+% -----------------------------------------------------------------
+% Bold sloping sans serif: for tensors and matrices
+\newcommand\ssba{\mathsfbi{a}} % for sans serif bold-sloping a
+\newcommand\ssbb{\mathsfbi{b}} % for sans serif bold-sloping b
+\newcommand\ssbc{\mathsfbi{c}} % for sans serif bold-sloping c
+\newcommand\ssbd{\mathsfbi{d}} % for sans serif bold-sloping d
+\newcommand\ssbe{\mathsfbi{e}} % for sans serif bold-sloping e
+\newcommand\ssbf{\mathsfbi{f}} % for sans serif bold-sloping f
+\newcommand\ssbg{\mathsfbi{g}} % for sans serif bold-sloping g
+\newcommand\ssbh{\mathsfbi{h}} % for sans serif bold-sloping h
+\newcommand\ssbi{\mathsfbi{i}} % for sans serif bold-sloping i
+\newcommand\ssbj{\mathsfbi{j}} % for sans serif bold-sloping j
+\newcommand\ssbk{\mathsfbi{k}} % for sans serif bold-sloping k
+\newcommand\ssbl{\mathsfbi{l}} % for sans serif bold-sloping l
+\newcommand\ssbm{\mathsfbi{m}} % for sans serif bold-sloping m
+\newcommand\ssbn{\mathsfbi{n}} % for sans serif bold-sloping n
+\newcommand\ssbo{\mathsfbi{o}} % for sans serif bold-sloping o
+\newcommand\ssbp{\mathsfbi{p}} % for sans serif bold-sloping p
+\newcommand\ssbq{\mathsfbi{q}} % for sans serif bold-sloping q
+\newcommand\ssbr{\mathsfbi{r}} % for sans serif bold-sloping r
+\newcommand\ssbs{\mathsfbi{s}} % for sans serif bold-sloping s
+\newcommand\ssbt{\mathsfbi{t}} % for sans serif bold-sloping t
+\newcommand\ssbu{\mathsfbi{u}} % for sans serif bold-sloping u
+\newcommand\ssbv{\mathsfbi{v}} % for sans serif bold-sloping v
+\newcommand\ssbw{\mathsfbi{w}} % for sans serif bold-sloping w
+\newcommand\ssbx{\mathsfbi{x}} % for sans serif bold-sloping x
+\newcommand\ssby{\mathsfbi{y}} % for sans serif bold-sloping y
+\newcommand\ssbz{\mathsfbi{z}} % for sans serif bold-sloping z
+%
+\newcommand\ssbA{\mathsfbi{A}} % for sans serif bold-sloping A
+\newcommand\ssbB{\mathsfbi{B}} % for sans serif bold-sloping B
+\newcommand\ssbC{\mathsfbi{C}} % for sans serif bold-sloping C
+\newcommand\ssbD{\mathsfbi{D}} % for sans serif bold-sloping D
+\newcommand\ssbE{\mathsfbi{E}} % for sans serif bold-sloping E
+\newcommand\ssbF{\mathsfbi{F}} % for sans serif bold-sloping F
+\newcommand\ssbG{\mathsfbi{G}} % for sans serif bold-sloping G
+\newcommand\ssbH{\mathsfbi{H}} % for sans serif bold-sloping H
+\newcommand\ssbI{\mathsfbi{I}} % for sans serif bold-sloping I
+\newcommand\ssbJ{\mathsfbi{J}} % for sans serif bold-sloping J
+\newcommand\ssbK{\mathsfbi{K}} % for sans serif bold-sloping K
+\newcommand\ssbL{\mathsfbi{L}} % for sans serif bold-sloping L
+\newcommand\ssbM{\mathsfbi{M}} % for sans serif bold-sloping M
+\newcommand\ssbN{\mathsfbi{N}} % for sans serif bold-sloping N
+\newcommand\ssbO{\mathsfbi{O}} % for sans serif bold-sloping O
+\newcommand\ssbP{\mathsfbi{P}} % for sans serif bold-sloping P
+\newcommand\ssbQ{\mathsfbi{Q}} % for sans serif bold-sloping Q
+\newcommand\ssbR{\mathsfbi{R}} % for sans serif bold-sloping R
+\newcommand\ssbS{\mathsfbi{S}} % for sans serif bold-sloping S
+\newcommand\ssbT{\mathsfbi{T}} % for sans serif bold-sloping T
+\newcommand\ssbU{\mathsfbi{U}} % for sans serif bold-sloping U
+\newcommand\ssbV{\mathsfbi{V}} % for sans serif bold-sloping V
+\newcommand\ssbW{\mathsfbi{W}} % for sans serif bold-sloping W
+\newcommand\ssbX{\mathsfbi{X}} % for sans serif bold-sloping X
+\newcommand\ssbY{\mathsfbi{Y}} % for sans serif bold-sloping Y
+\newcommand\ssbZ{\mathsfbi{Z}} % for sans serif bold-sloping Z
+%
+%
+% -----------------------------------------------------------------
+% Auxiliars for sloping uppercase Greek characteres
+\DeclareTextFontCommand\textsfi{\usefont{OT1}{cmss}{m}{sl}}
+\DeclareMathAlphabet\mathsfi            {OT1}{cmss}{m}{sl}
+\DeclareTextFontCommand\textsfb{\usefont{OT1}{cmss}{bx}{n}}
+\DeclareMathAlphabet\mathsfb            {OT1}{cmss}{bx}{n}
+\DeclareTextFontCommand\textsfbi{\usefont{OT1}{cmss}{m}{sl}}
+\DeclareMathAlphabet\mathsfbi            {OT1}{cmss}{m}{sl}
+%
+% -----------------------------------------------------------------
+% Sloping uppercase Greek characters
+\DeclareMathSymbol{\varGamma}{\mathord}{letters}{"00}
+\DeclareMathSymbol{\varDelta}{\mathord}{letters}{"01}
+\DeclareMathSymbol{\varTheta}{\mathord}{letters}{"02}
+\DeclareMathSymbol{\varLambda}{\mathord}{letters}{"03}
+\DeclareMathSymbol{\varXi}{\mathord}{letters}{"04}
+\DeclareMathSymbol{\varPi}{\mathord}{letters}{"05}
+\DeclareMathSymbol{\varSigma}{\mathord}{letters}{"06}
+\DeclareMathSymbol{\varUpsilon}{\mathord}{letters}{"07}
+\DeclareMathSymbol{\varPhi}{\mathord}{letters}{"08}
+\DeclareMathSymbol{\varPsi}{\mathord}{letters}{"09}
+\DeclareMathSymbol{\varOmega}{\mathord}{letters}{"0A}
+
+% -----------------------------------------------------------------
+% definiciones del usuario
+\newcommand{\ltitle}[1]{{\normalsize {\bf #1 }}}
+\newcommand{\stitle}[1]{\begin{center} \normalsize \bf #1 \end{center}}
+\newcommand{\hilight}[1]{\colorbox{yellow}{#1}}
+%
+% -----------------------------------------------------------------
+% definiciones para la agenda
+\newcommand\fonob[2]{\noindent{\hangindent 1truecm 
+  $\triangleright$ #1} \df #2 \par \smallskip }
+\newcommand\fono[2]{\noindent{\hangindent 1truecm 
+$\triangleright$ {\bf #1} \df {\bf #2} \par \smallskip}}
+\newcommand{\hregla}{\rule{\linewidth}{0.25mm}}
+\newcommand\letra[1]{ {\bf #1} \\ \hregla \smallskip}
+%
+% -----------------------------------------------------------------
+\newenvironment{sistema1}
+   {\left \lbrace \begin {array}{@{} l@{}}} 
+   {\end {array} \right .}
+\newenvironment{sistema2}
+   {              \begin {array}{@{} l@{}}} 
+   {\end {array}         }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

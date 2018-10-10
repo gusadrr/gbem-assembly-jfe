@@ -1,0 +1,278 @@
+\begin{figure*}[t]
+% ..................................................................
+\ifthenelse{\value{tema}=1} {\centerline{%
+  \includegraphics[width=6.5truecm]{./FIG/notatio5-gbem}
+  \hspace{40pt}%
+  \includegraphics[width=8.0truecm]{./FIG/m-master1}
+}}{}% end tema 1
+% ..................................................................
+\ifthenelse{\value{tema}=2} {\centerline{%
+  \psfig{width=6.5truecm,figure=./FIG/notatio5-gbem}
+} \vspace{5pt} \centerline{%
+  \psfig{width=8.0truecm,figure=./FIG/m-master1}
+}}{}% end tema 2
+% ..................................................................
+\caption{\hg{Left}: a rigid, closed, piecewise
+  smooth surface $A$ with an exterior domain $\Omega^e$: %
+  field point $\bm {x}$, source point $\bm {y}$, %
+  relative position $\bm {r}=\bm {x}-\bm {y}$, %
+  unit normals $\bm {n}(\bm {x}), \bm {n}(\bm {y})$,
+  and differential areas $\dif A_{\bm {x}}, \dif A_{\bm {y}}$.
+  %
+  \hg{Right}: master triangles $p$ and $q$ for the simplex
+  coordinates}%
+\label{fg-notation-gbem}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure}[tb]
+% ..................................................................
+\ifthenelse{\value{tema}=1} {% begin tema 1
+  \centerline{%
+  \includegraphics[width=8.6truecm]{./FIG/elemental-simetria-1}
+  }% end centerline
+}{}% end tema 1
+% ..................................................................
+\ifthenelse{\value{tema}=2} {% begin tema 2
+  \centerline{%
+  \psfig{width=8.6truecm,figure=./FIG/elemental-simetria-1}
+  }% end centerline
+}{}% end tema 2
+%
+\caption{%
+  The element matrices for the Stokes equation in 3D domains
+  using T1 elements \hg {(top)}: (i) double layer kernel
+  ${\tilde{\mathcal{K}}}^{(p,q)}(\bm{x}(\bm{\xi}),\bm{y}(\bm{\eta}))$, %
+  symmetric in each 3x3 block (\he{bottom} left); (ii) %
+  single-layer kernel
+  ${\tilde{\mathcal{S}}}^{(p,q)}(\bm{x}(\bm{\xi}),\bm{y}(\bm{\eta}))$: %
+  symmetric with respect to the main diagonal (\he{bottom} right).}%
+\label{fg-elemental-simetria}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure*}[tb]
+% ..................................................................
+\ifthenelse{\value{tema}=1} {% begin tema 1
+  \centerline{%
+    \includegraphics[width=16.8truecm,height=5.5truecm]%% =5.4
+                    {./FIG/te-galer-q22-stokes-run5}
+             }% end centerline
+}{}% end tema 1
+% ..................................................................
+\ifthenelse{\value{tema}=2} {% begin tema 2
+  \centerline{%
+    \includegraphics[width=16.8truecm,height=5.5truecm]%% =5.4
+                    {./FIG/te-galer-q22-stokes-run5}
+             }% end centerline
+}{}% end tema 2
+% ..................................................................
+\caption{%
+  \hy {Steady Stokes flow. %
+  Assemblies A0-A2 and collocation CO,
+  as functions of the degrees of freedom number $M=3N$:
+  (i)   the reciprocal of the condition numbers of the
+        system matrices rcond (left),
+  (ii)  the relative errors $|e_r\%|$ in the Stokes force
+        (middle left),
+  (iii) the wall times required for assemblies A0-A2, and
+        collocation CO (middle right), and
+  (iv)  the relative wall times between the A1 and A0 assemblies,
+        and between the A2 and A1 ones (right)}.
+  } % end caption
+\label{fg-simetria-stokes}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}[t]
+% ..................................................................
+\ifthenelse{\value{tema}=1} {\centerline{%
+    \includegraphics[width=16.8truecm,height=5.5truecm]%% =5.4
+                    {./FIG/te-galer-q22-oscila-run5}
+}}{}% end tema 1
+% ..................................................................
+\ifthenelse{\value{tema}=2} {\centerline{%
+    \includegraphics[width=16.8truecm,height=5.5truecm]%% =5.4
+                    {./FIG/te-galer-q22-oscila-run5}
+}}{}% end tema 2
+% ..................................................................
+\caption{%
+  \hy {Oscillatory Stokes flow. %
+  Assemblies A0-A1 and collocation CO,
+  as functions of the degrees of freedom number $M=3N$:
+  (i)   the reciprocal of the condition numbers of the
+        system matrices rcond (left),
+  (ii)  the relative errors $|e_r\%|$ in the Stokes force
+        (middle left),
+  (iii) the wall times required for the assemblies A0-A1
+        and collocation CO (middle left), and
+  (iv)  the relative wall times between A1 and A0 assemblies
+        (right)}.
+  }% end caption
+  %
+\label{fg-simetria-oscila}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}[tb]
+% ..................................................................
+\ifthenelse{\value{tema}=1} {% begin tema 1
+  \centerline{%
+   \includegraphics[width=4.6truecm]{./FIG/chueco-9824-b-bw}
+   \hspace{0pt}%
+   \includegraphics[width=0.8truecm]{./FIG/elemental-simetria-3}
+   \hspace{4pt}%
+   \includegraphics[width=3.4truecm]{./FIG/sculpt-012k}
+   \hspace{16pt}%
+   \includegraphics[width=0.8truecm]{./FIG/elemental-simetria-4}
+   \hspace{2pt}%
+   \includegraphics[width=6.2truecm]{./FIG/ra75-17686-dg-ta-bw-2}
+             }% end centerline
+}{}% end tema 1
+% ..................................................................
+\ifthenelse{\value{tema}=2} {% begin tema 2
+  \centerline{%
+  \psfig{width=4.5truecm,figure=./FIG/chueco-9824-b-bw}
+  \hspace{6pt}%
+  \psfig{width=0.8truecm,figure=./FIG/elemental-simetria-3}
+  \hspace{6t}% % triada xyz
+  \psfig{width=4.6truecm,figure=./FIG/sculpt-012k}
+  \hspace{8pt}%
+  \psfig{width=0.8truecm,figure=./FIG/elemental-simetria-4}
+  \hspace{6pt}%
+  \psfig{width=0.8truecm,figure=./FIG/ra75-17686-dg-ta-bw-2}
+           }% end centerline
+}{}% end tema 2
+% ..................................................................
+\caption{%
+   \hy {Bodies with edges and corners:
+   a hollow cube (HC) (left);
+   a sculpted sphere (SS) (middle); and
+   a perforated plate (PP) (right)} \cite{rf:netgen}.}
+\label{fg-perforated}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}[t]
+% ..................................................................
+\ifthenelse{\value{tema}=1} {\centerline{%
+    \includegraphics[width=16.8truecm,height=5.5truecm]%% =5.4
+                    {./FIG/te-compa-q22-stokes-run5}
+}}{}% end tema 1
+% ..................................................................
+\ifthenelse{\value{tema}=2} {\centerline{%
+    \includegraphics[width=16.8truecm,height=5.5truecm]%% =5.4
+                    {./FIG/te-compa-q22-stokes-run5}
+}}{}% end tema 2
+% ..................................................................
+\caption{%
+  \hy {Steady Stokes flow. %
+  Comparison between GBEM with assemblies A0-A2 and collocation
+  CO in the unit sphere and using a $Q_{22}$ quadrature,
+  as functions of the degrees of freedom number $M=3N$
+  or the number of elements $E$:
+  %
+  (i)   the total wall time per Degree Of Freedom (DOF)
+        (left),
+  (ii)  the main memory in Mbytes (middle left),
+  (iii) the reciprocal of the condition numbers of the
+        system matrix rcond (middle right), and
+  (iv)  the relative errors $|e_r\%|$ in the Stokes
+        force (right).}
+  }% end caption
+  %
+\label{fg:compa-q22-stokes-run5}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}[t]
+% ..................................................................
+\ifthenelse{\value{tema}=1} {\centerline{%
+    \includegraphics[width=16.8truecm,height=5.5truecm]%% =5.4
+                    {./FIG/te-compa-q22-oscila-run5}
+}}{}% end tema 1
+% ..................................................................
+\ifthenelse{\value{tema}=2} {\centerline{%
+    \includegraphics[width=16.8truecm,height=5.5truecm]%% =5.4
+                    {./FIG/te-compa-q22-oscila-run5}
+}}{}% end tema 2
+% ..................................................................
+\caption{%
+  \hy {Oscillatory Stokes flow. %
+  Comparison between GBEM with assemblies A0-A1 and collocation
+  BEM (CO) in the unit sphere and using a $Q_{22}$ quadrature,
+  as functions of the degrees of freedom number $M=3N$
+  or the number of elements $E$:
+  %
+  (i)   the total wall time per Degree Of Freedom (DOF)
+        (left),
+  (ii)  the main memory in Mbytes (middle left),
+  (iii) the reciprocal of the condition numbers of the
+        system matrix rcond (middle right), and
+  (iv)  the relative errors $|e_r\%|$ in the Stokes
+        force (right).}
+  }% end caption
+  %
+\label{fg:compa-q22-oscila-run5}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure}[ht]
+% ..................................................................
+\ifthenelse{\value{tema}=1} {% begin tema 1
+  \centerline{%
+    \includegraphics[width=8.4truecm,height=5.5truecm]%% =5.4
+                    {./FIG/te-galdi-q22-stokes-run5}
+             }% end centerline
+}{}% end tema 1
+% ..................................................................
+\ifthenelse{\value{tema}=2} {% begin tema 2
+  \centerline{%
+    \includegraphics[width=8.4truecm,height=5.5truecm]%% =5.4
+                    {fig9}
+             }% end centerline
+}{}% end tema 2
+% ..................................................................
+\caption{\he{%
+  Relative error $|e_r\%|$ of the Stokes force in the unit
+  sphere case as a function of the total wall time, and using
+  GBEM with assemblies A0-A2 and collocation BEM (CO):
+  (i)  steady creeping flow (left), and
+  (ii) oscillatory one (right).}} % end caption
+\label{fg-error-walltime}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure*}[tb]
+% ..................................................................
+\ifthenelse{\value{tema}=1} {% begin tema 1
+  \centerline{%
+    \includegraphics[width=16.8truecm,height=5.5truecm]%% =5.4
+                    {./FIG/te-galer-q22-morino-run5}
+             }% end centerline
+}{}% end tema 1
+% ..................................................................
+\ifthenelse{\value{tema}=2} {% begin tema 2
+  \centerline{%
+    \includegraphics[width=16.8truecm,height=5.5truecm]%% =5.4
+                    {./FIG/te-galer-q22-morino-run5}
+             }% end centerline
+}{}% end tema 2
+% ..................................................................
+\caption{%
+  \hy {Rankine closed body. %
+  Assemblies A0, A1, A3 and collocation CO,
+  as functions of the degrees of freedom number $M=N$:
+  (i)   the reciprocal of the condition numbers of the
+        system matrix rcond (left),
+  (ii)  the Mean Squared Error $\textrm {MSE}\%$ in the
+        dipolar density $\lambda$ (middle left),
+  (iii) the wall times required for assemblies A0, A1, A3, and
+        collocation CO (middle right), and
+  (iv)  the relative wall times between the A1 and A0 assemblies,
+        and between the A3 and A1 ones (right)}.
+  } % end caption
+\label{fg-simetria-morino}
+\end{figure*}
+\efloatseparator
+ 

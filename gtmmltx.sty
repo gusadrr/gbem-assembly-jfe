@@ -1,0 +1,508 @@
+% ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\input myhome           % Cada usuario debe adaptar este archivo 
+\def\macrosdir{\myhome} %/TEX/texstuff/macros}
+% ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+\def\mypage{
+\textheight=21.7truecm
+\textwidth=15truecm
+\hoffset=-0.8truecm
+\voffset=-2.0truecm
+}
+
+% \font\ss=cmss12
+\def\sss{\sffamily\small\normalsize}
+% \font\sss=cmss8
+\def\sss{\sffamily\small\footnotesize}
+\font\bss=cmssbx10
+%\font\tenss=cmss10
+\def\tenss{\sffamily\bfseries\normalsize}
+%
+\def\ch@lf#1{\hfil\hbox to 0pt{\hss#1\hss}\hfil}
+\def\selloiii#1#2#3{\hbox to \hsize{\ch@lf{#1}\ch@lf{#2}\ch@lf{#3}}}
+\def\selloii#1#2{\hbox to \hsize{\ch@lf{#1}\ch@lf{#2}}}
+\def\selloi#1{\selloii{ }{#1}}
+%
+% ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\def\Laura{Laura Battaglia}
+\def\Nestor{N\'estor Calvo}
+\def\Alberto{Dr. Alberto Cardona}
+\def\Federico{Federico Cavalieri}
+\def\Ruper{Lic. Ruperto Pedro Bonet Chaple}
+\def\Lisandro{Lisandro Dalcin}
+\def\Jorge{Jorge D'El\'{\i}a}
+\def\Luciano{Luciano Garelli}
+\def\Ariel{BioIng. Fabio A. Guarnieri}
+\def\Sergio{Dr. Sergio R. Idelsohn}
+\def\PabloA{Pablo Alejandro Kler}
+\def\Beto{Dr. Norberto M. Nigro}
+\def\Pato{A.U.S. Patricia Muda}
+\def\Rodrigo{Rodrigo Rafael Paz}
+\def\Damian{Dami\'an Ramajo}
+\def\Gustavo{Gustavo R\'{\i}os Rodr\'{\i}gues}
+\def\Pablo{Pablo S\'anchez}
+\def\Sofia{Sof\'{\i}a Soledad Sarraf}
+\def\Victorio{MSc. Ing. Victorio Sonzogni}
+\def\Mario{Mario A. Storti}
+\def\Lelia{Lelia Eva Zielonka}
+%
+% ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+% Ultimo nombre oficial: 
+%
+%   CIMEC - Centro de Investigación de Métodos 
+%   Computacionales (UNL/CONICET)
+%
+\def\CIMEC@{CIMEC - Centro de Investigaci\'on de\cr
+  M\'etodos Computacionales (UNL--CONICET)\cr}
+%
+\def\FIQMAT@{Dpto de Matem\'atica de la FIQ (UNL) \cr
+             CIMEC (UNL--CONICET)\cr}
+%
+\def\FICHTC{%Prof. titular \cr
+            C\'atedra Teor\'{\i}a de la Computaci\'on \cr
+            Dpto de Inform\'atica de la FICH, UNL \cr}
+\def\FICHCN{%Prof. titular \cr
+            C\'atedra C\'alculo Num\'erico \cr
+            Dpto de Inform\'atica de la FICH, UNL \cr}
+\def\IMAL{Profesor titular \cr
+%         C\'atedra ... \cr
+          Dpto de Matem\'aticas de la FIQ \cr
+          IMAL, UNL--CONICET \cr}
+\def\COMAHUE{% Profesor titular \cr
+          Dpto de Mec\'anica Aplicada \cr
+          Facultad de Ingenier\'{\i}a, UN Comahue \cr 
+          CONICET \cr }
+
+% ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+% \def\unsello#1{\vtop{\baselineskip .7em\halign{\sss\ \hfil##\hfil\cr#1}}}
+\def\unsello#1{\vtop{\baselineskip 0.9em
+    \halign{\sss\ \hfil##\hfil\cr#1}}}
+\def\LauraB{\unsello{\Laura \cr Investigadora Adjunta \cr\CIMEC@}}
+\def\AlbertoC{\unsello{\Alberto \cr Investigador Superior\cr\CIMEC@}}
+\def\FedericoC{\unsello{\Federico \cr Investigador Asistente\cr\CIMEC@}}
+\def\JorgeD{\unsello{\Jorge \cr Investigador Independiente\cr\CIMEC@}}
+\def\Jorged{\unsello{\Jorge \cr \CIMEC@}}
+\def\LisandroD{\unsello{\Lisandro \cr \CIMEC@}}
+\def\JorgeM{\unsello{\Jorge \cr c\'atedra Computaci\'on/Programaci\'on\cr\FIQMAT@}}
+\def\JorgeT{\unsello{\Jorge \cr\FICHTC}}
+\def\JorgeE{\unsello{\Jorge \cr Senior Researcher\cr\CIMEC@}}
+\def\Director{\unsello{\Alberto \cr DIRECTOR\cr\CIMEC@}}
+\def\LucianoG{\unsello{\Luciano \cr Investigador Asistente\cr\CIMEC@}}
+\def\PabloK{\unsello{\PabloA \cr Investigador Asistente\cr\CIMEC@}}
+\def\GustavoR{\unsello{\Gustavo \cr Investigador Asistente\cr\CIMEC@}}
+\def\SofiaS{\unsello{\Sofia \cr \COMAHUE}}
+\def\VictorioS{\unsello{\Victorio \cr Investigador Independiente\cr\CIMEC@}}
+\def\VictorioC{\unsello{\Victorio \cr \FICHCN}}
+\def\VictorioA{\unsello{\Victorio \cr \CIMEC@}}
+\def\MarioS{\unsello{\Mario \cr Investigador Principal\cr\CIMEC@}}
+%
+% \def\JorgeF{\unsello{\Jorge \cr \FIQMAT}}
+% \def\JorgeT{\unsello{\Jorge \cr \FICHTC}}
+
+%<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*> 
+% SCANNED SIGNATURE
+%\def\unselloscan#1#2{\vbox{\includegraphics{#1} #2}} }
+%
+\def\MarioScan{%
+\vbox{
+  \baselineskip .7em\halign{\sss\ \hfil##\hfil\cr
+    \hskip 1truecm
+    \includegraphics{\macrosdir/signature}\cr
+    \noalign{\vskip -1.1truecm}
+    \Mario\cr Investigador Principal CONICET\cr\CIMEC@}}}
+%<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*> 
+\def\MarioScanPerso{%
+\vbox{
+  \baselineskip .7em\halign{\sss\ \hfil##\hfil\cr
+    \hskip 1truecm
+    \includegraphics{\macrosdir/signature}\cr
+    \noalign{\vskip -1.1truecm}
+    Mario Storti\cr
+    DNI 14204324\cr
+}}}
+%
+%<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*> 
+\newcommand{\memCIMEC}{
+\addtolength{\headheight}{2truecm}
+\pagestyle{fancy}
+%\setlength{\footrulewidth}{0.4pt}
+\renewcommand{\headrulewidth}{0.4pt}
+\lhead{\includegraphics[height=3truecm]{\macrosdir/cimec-logo}}
+\cimecrhead
+\lfoot{\slshape\fontsize{8}{8}\selectfont          
+        CIMEC (UNL/CONICET\\
+        Predio CONICET ``Dr. Alberto Cassano''\\
+        Colect. Ruta Nac. 168 / Paraje El Pozo\\
+        3000 Santa Fe, Argentina
+}
+\cfoot{}
+\def\ttfont{\ttfamily\fontsize{8}{8}\selectfont}
+\rfoot{\slshape\sffamily\fontsize{8}{8}\selectfont
+         Tel: +54-342- 451 1594\\
+        Fax: +54-342- 451 1169\\
+        {\htmladdnormallink{\ttfont\ttla
+            cimec@santafe-conicet.gov.ar\ttra}
+          {mailto:cimec@santafe-conicet.gov.ar}
+          \htmladdnormallink{\ttfont www.cimec.org.ar}
+                            {http://www.cimec.org.ar}}\\}
+}
+
+% ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+%% \def\cimecrhead{
+%% \rhead{
+%%  \parbox[b]{8.0truecm}{
+%%   \baselineskip 10pt\tenss
+%%   {\color{blue}Centro de Investigaci\'on de \\
+%%   M\'etodos Computacionales (UNL--CONICET) \\}
+%%   ~\\
+%%   Universidad Nacional del Litoral (UNL)\\
+%%   Consejo Nacional de Investigaciones\\
+%%   Cient\'\i{}ficas y T\'ecnicas (CONICET) \\ 
+%% }}}
+\def\cimecrhead{
+\rhead{
+ \parbox[b]{5.7truecm}{
+  \baselineskip 10pt\tenss
+  {\color{blue}Centro de Investigaci\'on de\\
+  M\'etodos Computacionales\\}
+  ~\\
+  Universidad Nacional del Litoral\\
+  Consejo Nacional de Investigaciones\\
+  Cient\'\i{}ficas y T\'ecnicas\\ 
+}}}
+
+% ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\def\comahuerhead{
+\rhead{
+ \parbox[b]{7.5truecm}{
+  \baselineskip 10pt\tenss
+  {\color{blue} Dpto. de Mec\'anica Aplicada \\
+  Facultad de Ingenier\'{\i}a \\}
+  \\
+  Universidad Nacional del Comahue (UNCo)\\
+  Consejo Nacional de Investigaciones\\
+  Cient\'\i{}ficas y T\'ecnicas (CONICET) \\ 
+}}}
+
+% ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\newcommand{\memCIMECperso}{
+\addtolength{\headheight}{2truecm}
+\pagestyle{fancy}
+\fancypagestyle{bookstyle}{0.4pt}
+\lhead{\includegraphics[scale=1.5]{\macrosdir/cimec-logo}}
+\cimecrhead
+\lfoot{\slshape\fontsize{8}{8}\selectfont          
+        Mario A. Storti \\
+        CIMEC (UNL-CONICET) \\
+        Predio CONICET-Santa Fe\\
+        Colect. Ruta Nac. 168 Km 472, Paraje El Pozo\\
+        3000 Santa Fe, Argentina
+}
+\cfoot{}
+\def\ttfont{\ttfamily\fontsize{8}{8}\selectfont}
+\rfoot{\slshape\sffamily\fontsize{8}{8}\selectfont
+    Tel: +54-342- 451 1594 (ext. 1015)\\
+    Fax: +54-342- 451 1169\\
+    {\htmladdnormallink{\ttfont\ttla mario.storti@gmail.com\ttra}
+    {mailto:mario.storti@gmail.com}
+    \htmladdnormallink{\ttfont www.cimec.org.ar/mstorti}
+    {http://www.cimec.org.ar/mstorti}}\\}
+}
+
+%<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*> 
+\newcommand{\memCIMEClbattaglia}{
+\addtolength{\headheight}{2truecm}
+\pagestyle{fancy}
+\fancypagestyle{bookstyle}{0.4pt}
+\lhead{\includegraphics[scale=1.5]{\macrosdir/cimec-logo}}
+\cimecrhead
+\lfoot{\slshape\fontsize{8}{8}\selectfont          
+        Laura Battaglia \\
+        CIMEC (UNL-CONICET) \\
+        Predio CONICET-Santa Fe\\
+        Colect. Ruta Nac. 168 Km 472, Paraje El Pozo\\
+        3000 Santa Fe, Argentina
+}
+\cfoot{}
+\def\ttfont{\ttfamily\fontsize{8}{8}\selectfont}
+\rfoot{\slshape\sffamily\fontsize{8}{8}\selectfont
+        Tel: +54-342- 451 1594 (ext. 7063)\\
+        Fax: +54-342- 451 1169\\
+        {\htmladdnormallink{\ttfont\ttla %
+          lbattaglia@santafe-conicet.gob.ar \ttra}
+          {mailto:lbattaglia@santafe-conicet.gob.ar}
+          \htmladdnormallink{\ttfont www.cimec.org.ar}
+                            {http://www.cimec.org.ar}}\\}
+}
+
+
+%<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*> 
+\newcommand{\memCIMECacardona}{
+\addtolength{\headheight}{2truecm}
+\pagestyle{fancy}
+\fancypagestyle{bookstyle}{0.4pt}
+\lhead{\includegraphics[scale=1.5]{\macrosdir/cimec-logo}}
+\cimecrhead
+\lfoot{\slshape\fontsize{8}{8}\selectfont          
+       Alberto Cardona \\
+       CIMEC (UNL-CONICET) \\
+       Predio CONICET ``Dr Alberto Cassano'' \\ %-Santa Fe \\
+       Colect. Ruta Nac. 168 Km 472, Paraje El Pozo\\
+       3000 Santa Fe, Argentina
+}
+\cfoot{}
+\def\ttfont{\ttfamily\fontsize{8}{8}\selectfont}
+\rfoot{\slshape\sffamily\fontsize{8}{8}\selectfont
+    Tel: +54-342- 451 1594 (ext. 7035)\\
+    Fax: +54-342- 451 1169\\
+    {\htmladdnormallink{\ttfont \ttla acardona@unl.edu.ar\ttra}
+      {mailto:acardona@unl.edu.ar}
+      ~ \htmladdnormallink{\ttfont http://www.cimec.org.ar}
+                        {http://www.cimec.org.ar}}\\}
+}
+
+%<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*> 
+\newcommand{\memCIMECfcavalieri}{
+\addtolength{\headheight}{2truecm}
+\pagestyle{fancy}
+\fancypagestyle{bookstyle}{0.4pt}
+\lhead{\includegraphics[scale=1.5]{\macrosdir/cimec-logo}}
+\cimecrhead
+\lfoot{\slshape\fontsize{8}{8}\selectfont          
+       Federico Cavalieri \\
+       CIMEC (UNL-CONICET) \\
+       Predio CONICET ``Dr Alberto Cassano'' \\ %-Santa Fe \\
+       Colect. Ruta Nac. 168 Km 472, Paraje El Pozo\\
+       3000 Santa Fe, Argentina
+}
+\cfoot{}
+\def\ttfont{\ttfamily\fontsize{8}{8}\selectfont}
+\rfoot{\slshape\sffamily\fontsize{8}{8}\selectfont
+    Tel: +54-342- 451 1594 (ext. 7037)\\
+    Fax: +54-342- 451 1169\\
+    {\htmladdnormallink{\ttfont %
+        \ttla fcavalieri@santafe-conicet.gov.ar\ttra}
+      {mailto:fcavalieri@santafe-conicet.gov.ar}
+      ~ \htmladdnormallink{\ttfont http://www.cimec.org.ar}
+                        {http://www.cimec.org.ar}}\\}
+}
+
+%<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*> 
+\newcommand{\memCIMECjdelia}{
+  \addtolength{\headheight}{2truecm}
+% \renewcommand{\headrulewidth}{0pt}
+  \pagestyle{fancy}
+  \fancypagestyle{bookstyle}{0.4pt}
+  \lhead{%\hrule
+    \vspace{0.5truecm} \hspace{0.1truecm}
+    \includegraphics[height=21truemm]{\macrosdir/cimec-logo}
+    \vspace{0.2truecm}}
+  \cimecrhead
+  \lfoot{\slshape\fontsize{8}{8}\selectfont
+       \hrule \vspace{0.2truecm}
+       Jorge D'El\'{\i}a \\
+       CIMEC (UNL--CONICET) \\
+       Predio CONICET ``Dr Alberto Cassano'' \\
+       Colect. Ruta Nac. 168 Km / Paraje El Pozo\\
+       3000 Santa Fe, Argentina
+}
+\cfoot{}
+\def\ttfont{\ttfamily\fontsize{8}{8}\selectfont}
+\rfoot{\slshape\sffamily\fontsize{8}{8}\selectfont
+    \vspace{0.2truecm}
+    Tel: +54-342- 451 1594 (ext. 7062)\\
+    Fax: +54-342- 451 1169\\
+    {\htmladdnormallink{\ttfont \ttla jdelia@intec.unl.edu.ar\ttra}
+      {mailto:jdelia@intec.unl.edu.ar}
+      ~ \htmladdnormallink{\ttfont http://www.cimec.org.ar}
+                        {http://www.cimec.org.ar}}\\}
+}
+
+
+%<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*> 
+\newcommand{\memCIMECdalcinl}{
+  \addtolength{\headheight}{2truecm}
+% \renewcommand{\headrulewidth}{0pt}
+  \pagestyle{fancy}
+  \fancypagestyle{bookstyle}{0.4pt}
+  \lhead{%\hrule
+    \vspace{0.5truecm} \hspace{0.1truecm}
+    \includegraphics[height=21truemm]{\macrosdir/cimec-logo}
+    \vspace{0.2truecm}}
+  \cimecrhead
+  \lfoot{\slshape\fontsize{8}{8}\selectfont
+       \hrule \vspace{0.2truecm}
+       Lisandro Dalcin \\
+       CIMEC (UNL--CONICET) \\
+       Predio CONICET ``Dr Alberto Cassano'' \\
+       Colect. Ruta Nac. 168 Km / Paraje El Pozo\\
+       3000 Santa Fe, Argentina
+}
+\cfoot{}
+\def\ttfont{\ttfamily\fontsize{8}{8}\selectfont}
+\rfoot{\slshape\sffamily\fontsize{8}{8}\selectfont
+    \vspace{0.2truecm}
+    Tel: +54-342- 451 1594 (ext. 7009)\\
+    Fax: +54-342- 451 1169\\
+    {\htmladdnormallink{\ttfont \ttla dalcinl@gmail.com\ttra}
+      {mailto:dalcinl@gmail.com}
+      ~ \htmladdnormallink{\ttfont http://www.cimec.org.ar}
+                        {http://www.cimec.org.ar}}\\}
+}
+
+
+%<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*> 
+\newcommand{\memCIMEClgarelli}{
+\addtolength{\headheight}{2truecm}
+\pagestyle{fancy}
+\fancypagestyle{bookstyle}{0.4pt}
+\lhead{\includegraphics[scale=1.5]{\macrosdir/cimec-logo}}
+\cimecrhead
+\lfoot{\slshape\fontsize{8}{8}\selectfont          
+        Luciano Garelli \\
+        CIMEC (UNL-CONICET) \\
+        Predio CONICET-Santa Fe\\
+        Colect. Ruta Nac. 168 Km 472, Paraje El Pozo\\
+        3000 Santa Fe, Argentina
+}
+\cfoot{}
+\def\ttfont{\ttfamily\fontsize{8}{8}\selectfont}
+\rfoot{\slshape\sffamily\fontsize{8}{8}\selectfont
+    Tel: +54-342- 451 1594 (ext. 7064)\\
+    Fax: +54-342- 451 1169\\
+    {\htmladdnormallink{\ttfont \ttla lucianogarelli@hotmail.com\ttra}
+    {mailto:lucianogarelli@hotmail.com}
+     ~ \htmladdnormallink{\ttfont www.cimec.org.ar}
+    {http://www.cimec.org.ar}}\\}
+}
+
+%<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*> 
+\newcommand{\memCIMECpkler}{
+\addtolength{\headheight}{2truecm}
+\pagestyle{fancy}
+\fancypagestyle{bookstyle}{0.4pt}
+\lhead{\includegraphics[scale=1.5]{\macrosdir/cimec-logo}}
+\cimecrhead
+\lfoot{\slshape\fontsize{8}{8}\selectfont          
+        Pablo Kler \\
+        CIMEC (UNL-CONICET) \\
+        Predio CONICET-Santa Fe\\
+        Colect. Ruta Nac. 168 Km 472, Paraje El Pozo\\
+        3000 Santa Fe, Argentina
+}
+\cfoot{}
+\def\ttfont{\ttfamily\fontsize{8}{8}\selectfont}
+\rfoot{\slshape\sffamily\fontsize{8}{8}\selectfont
+        Tel: +54-342- 451 1594 (ext. 7064)\\
+        Fax: +54-342- 451 1169\\
+        {\htmladdnormallink{\ttfont\ttla %
+          kler@cimec.santafe-conicet.gov.ar \ttra}
+          {mailto:kler@cimec.santafe-conicet.gov.ar}
+          \htmladdnormallink{\ttfont www.cimec.org.ar}
+                            {http://www.cimec.org.ar}}\\}
+}
+
+%<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*> 
+\newcommand{\memCIMECgrios}{
+\addtolength{\headheight}{2truecm}
+\pagestyle{fancy}
+\fancypagestyle{bookstyle}{0.4pt}
+\lhead{\includegraphics[scale=1.5]{\macrosdir/cimec-logo}}
+\cimecrhead
+\lfoot{\slshape\fontsize{8}{8}\selectfont          
+        Gustavo R\'{\i}os Rodr\'{\i}gues \\
+        CIMEC (UNL-CONICET) \\
+        Predio CONICET-Santa Fe\\
+        Colect. Ruta Nac. 168 Km 472, Paraje El Pozo\\
+        3000 Santa Fe, Argentina
+}
+\cfoot{}
+\def\ttfont{\ttfamily\fontsize{8}{8}\selectfont}
+\rfoot{\slshape\sffamily\fontsize{8}{8}\selectfont
+        Tel: +54-342- 451 1594 (ext. 7063)\\
+        Fax: +54-342- 451 1169\\
+        {\htmladdnormallink{\ttfont\ttla %
+           \ttra gusadrr@yahoo.com.ar}
+          {mailto:gusadrr@yahoo.com.ar}
+          \htmladdnormallink{\ttfont www.cimec.org.ar}
+                            {http://www.cimec.org.ar}}\\}
+}
+
+%<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*> 
+\newcommand{\memCIMECssarraf}{
+\addtolength{\headheight}{2truecm}
+\pagestyle{fancy}
+\fancypagestyle{bookstyle}{0.4pt}
+%\lhead{\includegraphics[scale=1.5]{\macrosdir/cimec-logo}}
+%\cimecrhead
+\comahuerhead
+\lfoot{\slshape\fontsize{8}{8}\selectfont          
+       Sof\'{\i}a Sarraf \\
+       Dpto de Mec\'anica Aplicada \\
+       Facultad de Ingenier\'{\i}a, UN Comahue \\
+       Buenos Aires 1400, Q8300IBX~Neuqu\'en, Argentina \\
+}
+\cfoot{}
+\def\ttfont{\ttfamily\fontsize{8}{8}\selectfont}
+\rfoot{\slshape\sffamily\fontsize{8}{8}\selectfont
+    Tel: +54-299- 449 0368, 4449 0325 \\
+    Fax: +54-299- 449 0329\\
+    {\htmladdnormallink{\ttfont \ttla sssarraf@gmail.com\ttra}
+    {mailto:sssarraf@gmail.com}
+    %  ~ \htmladdnormallink{\ttfont http://www.cimec.org.ar}
+    %                    {http://www.cimec.org.ar}
+    }\\}
+}
+
+%<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*> 
+\newcommand{\memCIMECvsonzogni}{
+\addtolength{\headheight}{2truecm}
+\pagestyle{fancy}
+\fancypagestyle{bookstyle}{0.4pt}
+\lhead{\includegraphics[scale=1.5]{\macrosdir/cimec-logo}}
+\cimecrhead
+\lfoot{\slshape\fontsize{8}{8}\selectfont          
+        Victorio Sonzogni \\
+        CIMEC (UNL-CONICET) \\
+        Predio CONICET-Santa Fe\\
+        Colect. Ruta Nac. 168 Km 472, Paraje El Pozo\\
+        3000 Santa Fe, Argentina
+}
+\cfoot{}
+\def\ttfont{\ttfamily\fontsize{8}{8}\selectfont}
+\rfoot{\slshape\sffamily\fontsize{8}{8}\selectfont
+        Tel: +54-342- 451 1594 (ext. 7030)\\
+        Fax: +54-342- 451 1169\\
+        {\htmladdnormallink{\ttfont\ttla %
+           \ttra sonzogni@intec.unl.edu.ar}
+          {mailto:sonzogni@intec.unl.edu.ar}
+          \htmladdnormallink{\ttfont www.cimec.org.ar}
+                            {http://www.cimec.org.ar}}\\}
+}
+
+%<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*>---<*> 
+\newcommand{\memCIMECmstorti}{
+\addtolength{\headheight}{2truecm}
+\pagestyle{fancy}
+\fancypagestyle{bookstyle}{0.4pt}
+\lhead{\includegraphics[scale=1.5]{\macrosdir/cimec-logo}}
+\cimecrhead
+\lfoot{\slshape\fontsize{8}{8}\selectfont          
+        Mario A. Storti \\
+        CIMEC (UNL-CONICET) \\
+        Predio CONICET-Santa Fe\\
+        Colect. Ruta Nac. 168 Km 472, Paraje El Pozo\\
+        3000 Santa Fe, Argentina
+}
+\cfoot{}
+\def\ttfont{\ttfamily\fontsize{8}{8}\selectfont}
+\rfoot{\slshape\sffamily\fontsize{8}{8}\selectfont
+        Tel: +54-342- 451 1594 (ext. 7065)\\
+        Fax: +54-342- 451 1169\\
+        {\htmladdnormallink{\ttfont\ttla mario.storti@gmail.com\ttra}
+          {mailto:mario.storti@gmail.com}
+          \htmladdnormallink{\ttfont www.cimec.org.ar/mstorti}
+                            {http://www.cimec.org.ar/mstorti}}\\}
+}
+
+% ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

@@ -1,0 +1,257 @@
+\begin{table*}
+  \centering
+  \caption{%
+    Number of operations (by Gauss-Legendre quadrature point)
+    in the assemblies A0, A1, and A2}
+  \vspace{2pt}
+  \label{ta:conteo1}
+  %
+  \begin{tabular}{llll}
+  \hline  product
+  & A0 [Eqns.~(\ref{eq:simetria0100},\ref{eq:simetria0102})]
+  & A1 [Eqns.~(\ref{eq:simetria0100},\ref{eq:simetria0120})]
+  & A2 [Eqns.~(\ref{eq:simetria0120},\ref{eq:simetria0130})]\\
+  \hline
+    %
+     &
+    $3^2 \times 6 = 54$ &
+    $3^2 \times 2 = 18$ &
+    $6   \times 2 = 12$ \\
+    %
+     &
+    $3 \times 54 = 162$ &
+    not performed       &
+    not performed      \\
+    %
+     &
+    $162 + 3^2 \times 54 = 648 $ &
+    $      3^2 \times 18 = 162 $ &
+    $      3^2 \times 12 = 108 $ \\
+    %
+    relative count \% w.r.t. A0 &
+    %\% w.r.t. A0 &
+    ---   &
+    25~\% &
+    17~\% \\
+    %
+    relative count \% w.r.t. A1 &
+    %\% w.r.t. A1 &
+    ---   &
+    ---   &
+    67~\% \\
+    %
+    \hline
+    %
+\end{tabular}
+\end{table*}
+\efloatseparator
+ 
+\begin{table*}[ht]
+  \centering
+  \caption{\hy{%
+    Wall times (in seconds) and relative times in assembling
+    the system matrix for the Stokes flow around: a hollow cube (HC),
+    a sculpted sphere (SS), and a perforated plate (PP)}}
+  \vspace{2pt}
+  \label{ta:conteo2}
+  %
+  \begin{tabular}{l*{9}r}% equivale a {lrrrrrrrrr}
+    \hline
+        & \multicolumn{3}{r}%
+          {A0, Eqns.~(\ref{eq:simetria0100},\ref{eq:simetria0102})
+          \hspace{7mm}}
+        & \multicolumn{3}{r}%
+          {A1, Eqns.~(\ref{eq:simetria0100},\ref{eq:simetria0120})
+          \hspace{7mm}}
+        & \multicolumn{3}{r}%
+          {A2, Eqns.~(\ref{eq:simetria0120},\ref{eq:simetria0130})
+          \hspace{7mm}}\\
+          %
+          & HC & SS & PP & HC & SS & PP & HC & SS & PP \\
+          %
+    \hline
+      wall time for assembly   &
+      $436$ & $655$ & $2260$   &
+      $237$ & $333$ & $969$    &
+      $161$ & $228$ & $713$    \\
+    %
+      relative time \% w.r.t. A0 &
+      ---   &  ---  &  ---       &
+      54\%  & 51\%  &  43\%      &
+      37\%  & 32\%  &  32\%    \\
+    %
+      relative time \% w.r.t. A1 &
+      ---   &  ---  &  ---       &
+      ---   &  ---  &  ---       &
+      68\%  &  69\% &  74\%      \\
+    %
+    \hline
+    %
+\end{tabular}
+\end{table*}
+\efloatseparator
+ 
+\begin{table}[tb]
+  \centering
+  \caption{\hy {Integration coordinates $\bm {\mu}_n, \bm {\xi}_n$
+    and Jacobian $J_n$, as a function of the coordinates
+    $0 \le  \omega, x, \chi_1, \chi_2 \le 1$ in  the case
+    of the self--integrals $\bm {I_1}-\bm {I}_3$}
+    \cite{rf:taylordj1,rf:jdelia-gbem1}}
+  \smallskip
+  \label{ta:duffy_panel_comun2}
+  \begin{tabular}{llll}
+    \hline\noalign{\smallskip}
+                 &
+   $ \bm {I}_1 $ &
+   $ \bm {I}_2 $ &
+   $ \bm {I}_3 $ \\
+    \noalign{\smallskip}\hline\noalign{\smallskip}
+ % F1
+ $ \mu_1    $  &
+ $ \omega   $  &
+ $ \omega x $  &
+ $ \omega x $  \\
+ %
+ % F2
+ $ \mu_2    $      &
+ $ \omega x $      &
+ $ \omega (x - 1)$ &
+ $ \omega        $ \\
+ % F3
+ $ \xi_{1}                                     $ &
+ $ (1 - \mu_1)         \chi_1                  $ &
+ $ (1 - \mu_1 + \mu_2) \chi_1 - \mu_2          $ &
+ $ (1 - \mu_2) \chi_1  $ \\ %% + \mu_2 - \mu_1
+ %
+ % F3b
+ $                                             $ &
+ $                                             $ &
+ $                                             $ &
+ $ + (\mu_2 - \mu_1)                            $ \\
+ % F4
+ $ \xi_{2}                                     $ &
+ $ \xi_1 \chi_2                                $ &
+ $ (\xi_1 + \mu_2) \chi_2 - \mu_2              $ &
+ $ (\xi_1 - \mu_2 + \mu_1) \chi_2              $ \\
+ %
+ % F5
+ $ J_n                                         $ &
+ $ (1 - \mu_1)          \xi_1                  $ &
+ $ (1 - \mu_1 + \mu_2) (\xi_1 + \mu_2)          $ &
+ $ (1 - \mu_2) (\xi_1 - \mu_2 + \mu_1) $ \\
+ %
+ % F5b
+ %$                                             $ &
+ %$                                             $ &
+ %$                                             $ &
+ %$ \times (\xi_1 - \mu_2 + \mu_1) $ \\
+\noalign{\smallskip}\hline
+\end{tabular}
+\end{table}
+\efloatseparator
+ 
+\begin{table}[tb]
+  \centering
+  \caption{\hy {
+      Integration coordinates $\bm {\mu}_n$ and $\bm {\xi}_n$,
+      as a function of the coordinates
+      $0 \le  \omega, x_1, x_2, \chi_1 \le 1$ in
+      the integrals with a common edge $\bm {I}_4-\bm {I}_9$}
+    \cite{rf:taylordj1,rf:jdelia-gbem1}}
+  \smallskip
+  \label{ta:duffy_arista_comun2}
+  \begin{tabular}{lllll}
+    \hline\noalign{\smallskip}
+   $n$ & %% $ \bm {I}_n $
+   $ \mu_1$        &
+   $ \mu_2 $       &
+   $ \xi_1$        &
+   $ \xi_2$        \\
+  \noalign{\smallskip}\hline\noalign{\smallskip}
+ $ 4 $                    &
+ $ -\omega x_1 $                  &
+ $ -\omega x_1 x_2$               &
+ $ (1 - \omega) \chi_1 + \omega $ &
+ $ \omega (1 - x_1 + x_1 x_2) $   \\
+ %
+ $ 5 $                    &
+ $ \omega x_1 $                   &
+ $ \omega x_1 x_2$                &
+ $ (1-\omega) \chi_1 $            &    %% $ + \omega (1 - x_1) $
+ $ \omega (1 - x_1)               $ \\
+ %
+                                  &
+                                  &
+                                  &
+ $ + \omega (1 - x_1) $           &
+                                    \\
+ %
+ $ 6 $                    &
+ $ -\omega x_1 x_2$               &
+ $  \omega x_1 (1 - x_2) $        &
+ $ (1 - \omega) \chi_1 + \omega $ &
+ $ \omega (1 - x_1)             $ \\
+ %
+ $ 7 $                    &
+ $ \omega x_1 x_2       $         &
+ $ \omega x_1 (x_2 - 1) $         &
+ $ (1 - \omega) \chi_1  $         &  %% $ + \omega (1 - x_1 x_2) $
+ $ \omega (1 - x_1 x_2)         $ \\
+ %
+                                  &
+                                  &
+                                  &
+ $ + \omega (1 - x_1 x_2) $       &
+                                  \\
+ %
+ $ 8 $                    &
+ $ -\omega x_1 x_2 $              &
+ $ -\omega x_1 $                  &
+ $ (1 - \omega) \chi_1 + \omega $ &
+ $ \omega                       $ \\
+ %
+ $ 9 $                    &
+ $  \omega x_1 x_2 $              &
+ $  \omega x_1 $                  &
+ $ (1 - \omega) \chi_1 $          & %% $+ \omega (1 - x_1 x_2) $
+ $ \omega (1 - x_1)               $ \\
+ %
+                                  &
+                                  &
+                                  &
+ $ + \omega (1 - x_1 x_2) $       &
+ $ \omega (1 - x_1) $             \\
+  \noalign{\smallskip}\hline
+\end{tabular}
+\end{table}
+\efloatseparator
+ 
+\begin{table}[tb]
+  \centering
+  \caption{ \hy {%
+      Integration coordinates $\bm {\xi}_{10}$ and $\bm {\eta}_{10}$,
+      as a function of the coordinates
+      $0 \le \omega, z_1, z_2, z_3 \le 1$ in
+      the integral with a common vertex $\bm {I}_{10}$}
+      \cite{rf:taylordj1,rf:jdelia-gbem1}}
+  \smallskip
+  \label{ta:duffy_vertex_comun2}
+  \begin{tabular}{lllll}
+    \hline\noalign{\smallskip}
+                    &
+   $  \xi_1 $       &
+   $  \xi_2 $       &
+   $ \eta_1 $       &
+   $ \eta_2 $       \\
+  \noalign{\smallskip}\hline\noalign{\smallskip}
+ $  \bm {I}_{10}   $  &
+ $  \omega         $  &
+ $  \omega z_1     $  &
+ $  \omega z_2     $  &
+ $  \omega z_2 z_3 $ \\
+  \noalign{\smallskip}\hline
+\end{tabular}
+\end{table}
+\efloatseparator
+ 

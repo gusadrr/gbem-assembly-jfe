@@ -1,0 +1,45 @@
+1. Para clonar el repositorio con el proyecto:
+git clone https://github.com/gusadrr/gbem-assembly-jfe.git
+
+2. Para chequear el estado de tu copia local del repositorio:
+git status
+
+3. Para agregar archivos a la lista de archivos a ser comitidos
+al repositorio (por ej: si modifiqué el .tex y el .pdf y quiero
+comitirlos al repositorio):
+git add gbem-assembly-jfe.pdf gbem-assembly-jfe.tex
+
+3.1 Para agregar un archivo nuevo al repositorio (por ej:
+basic_command_lines.txt):
+git add basic_command_lines.txt
+git commit -m "<Breve descripción del archivo o de los cambios
+introducidos en el archivo>"
+git push origin master
+
+4. Para hacer el commit de los cambios (agrego un mensaje
+indicando cuáles son los cambios con la opción -m "mensaje")
+git commit -m "Second test, reverted to original title"
+
+5. Para subir los cambios al repositorio
+git push origin master
+
+6. Para traer los datos del repositorio a tu copia local
+git fetch origin
+
+7. Para traer los datos del repositorio a tu copia local
+y hacer el merge con los archivos correspondientes en tu copia
+local
+git pull origin
+
+8. Ojo, si se han modificado localmente archivos que son trackeados
+por git, entonces al hacer git pull te va a salir un mensaje de error:
+
+error: Your local changes to the following files would be overwritten
+by merge: <lista de archivos que serán modificados>
+
+En tal caso, si no me interesa perder los cambios en mi copia local
+por el merge del git pull, entonces puedo hacer:
+git checkout <archivo que no me interesa pisar con el merge del pull>
+
+y luego:
+git pull
